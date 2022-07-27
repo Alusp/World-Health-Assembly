@@ -440,27 +440,27 @@ header {
 
 /*  ############################ speakers ############################ */
 .speaker1 .profilepicture {
-  background-image: url("images/comittee1.jpg"), url("./images/chessboard.svg");
+  background-image: url("images/comittee1.jpg"), url("./images/board.svg");
 }
 
 .speaker2 .profilepicture {
-  background-image: url("images/comittee2.jpg"), url("./images/chessboard.svg");
+  background-image: url("images/comittee2.jpg"), url("./images/board.svg");
 }
 
 .speaker3 .profilepicture {
-  background-image: url("images/comittee3.jpg"), url("./images/chessboard.svg");
+  background-image: url("images/comittee3.jpg"), url("./images/board.svg");
 }
 
 .speaker4 .profilepicture {
-  background-image: url("images/director.png"), url("./images/chessboard.svg");
+  background-image: url("images/director.png"), url("./images/board.svg");
 }
 
 .speaker5 .profilepicture {
-  background-image: url("images/comittee5.jpg"), url("./images/chessboard.svg");
+  background-image: url("images/comittee5.jpg"), url("./images/board.svg");
 }
 
 .speaker6 .profilepicture {
-  background-image: url("images/commitee7.jpeg"), url("./images/chessboard.svg");
+  background-image: url("images/commitee7.jpeg"), url("./images/board.svg");
 }
 
 /* ############################ partners section ############################ */
