@@ -1,9 +1,7 @@
-/* ############################ Variables Declaration  ############################ */
-
 :root {
-  --iron: #d3d3d3;
-  --red-orange: #f6362f;
-  --shark: #282931;
+  --primerr: #d3d3d3;
+  --secondary: #f6362f;
+  --masks: #282931;
   --media-breakpoint: 768px;
 }
 
@@ -31,7 +29,7 @@ hr {
   border: none;
   width: 24px;
   padding: 12px;
-  border-top: 2px solid var(--red-orange);
+  border-top: 2px solid var(--secondary);
 }
 
 a,
@@ -63,7 +61,7 @@ button {
 /* ############################ Global  classes ############################ */
 
 .button {
-  background-color: var(--red-orange);
+  background-color: var(--secondary);
   border: 0.5px solid transparent;
   color: white;
   padding: 12px 24px;
@@ -74,14 +72,14 @@ button {
 
 .button:hover {
   border: 0.5px solid transparent;
-  box-shadow: 0 4px 6px 3px var(--iron);
+  box-shadow: 0 4px 6px 3px var(--primerr);
   cursor: pointer;
 }
 
 .button:active {
-  border: 0.5px solid var(--red-orange);
+  border: 0.5px solid var(--secondary);
   background: white;
-  color: var(--red-orange);
+  color: var(--secondary);
   cursor: pointer;
 }
 
@@ -106,7 +104,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  color: var(--shark);
+  color: var(--masks);
 }
 
 .fordesktopnav {
@@ -116,14 +114,8 @@ header {
 }
 
 .fordesktopnav > * {
-  padding-left:
-    calc(
-      0.2 * (100vw - var(--media-breakpoint)) + 12px
-    );
-  padding-right:
-    calc(
-      0.2 * (100vw - var(--media-breakpoint)) + 12px
-    );
+  padding-left: calc(0.2 * (100vw - var(--media-breakpoint)) + 12px);
+  padding-right: calc(0.2 * (100vw - var(--media-breakpoint)) + 12px);
 }
 
 .accounttopbar {
@@ -133,7 +125,7 @@ header {
   padding-top: 12px;
   padding-bottom: 12px;
   color: white;
-  background-color: var(--shark);
+  background-color: var(--masks);
 }
 
 .accounttopbar a {
@@ -175,7 +167,7 @@ header {
   font-weight: 100;
   position: relative;
   top: 6px;
-  color: var(--shark);
+  color: var(--masks);
 }
 
 .mainmenunav {
@@ -192,31 +184,31 @@ header {
 }
 
 .navmenu a {
-  color: var(--shark);
+  color: var(--masks);
   font-weight: 500;
   padding: 12px;
 }
 
 .navmenu .current-page {
-  color: var(--red-orange);
+  color: var(--secondary);
 }
 
 .mainmenunav button {
-  color: var(--red-orange);
+  color: var(--secondary);
   background-color: white;
-  border: 3px solid var(--red-orange);
+  border: 3px solid var(--secondary);
   font-family: COCOGOOSE, sans-serif;
 }
 
 /* mobile nav */
 .mymobilenav .buttonmobilemenu:hover {
-  background-color: var(--shark);
+  background-color: var(--masks);
   color: white;
 }
 
 .mymobilenav .buttonmobilemenu:active {
-  border: 0.5px solid var(--iron);
-  background-color: var(--shark);
+  border: 0.5px solid var(--primerr);
+  background-color: var(--masks);
   cursor: pointer;
 }
 
@@ -228,7 +220,7 @@ header {
   align-items: flex-start;
   gap: 12px;
   min-height: calc(100vh - 76px);
-  background-color: var(--iron);
+  background-color: var(--primerr);
   background-color: transparent;
 }
 
@@ -238,7 +230,7 @@ header {
 }
 
 .head .hello {
-  color: var(--red-orange);
+  color: var(--secondary);
   font-size: 24px;
 }
 
@@ -254,21 +246,21 @@ header {
 
 .head .supporting-text {
   padding: 12px;
-  color: var(--shark);
+  color: var(--masks);
   font-size: 18px;
   background-color: rgb(255 255 255 / 20%);
-  border: 2px solid var(--iron);
+  border: 2px solid var(--primerr);
 }
 
 .head .date {
-  color: var(--shark);
+  color: var(--masks);
   font-size: 32px;
   font-weight: bold;
   overflow-wrap: break-word;
 }
 
 .head .place {
-  color: var(--shark);
+  color: var(--masks);
   font-size: 24px;
   font-weight: bolder;
   overflow-wrap: break-word;
@@ -283,7 +275,7 @@ header {
   gap: 16px;
   min-height: 50vh;
   background-image: url("./images/program-bg.png");
-  background-color: var(--shark);
+  background-color: var(--masks);
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -323,7 +315,7 @@ header {
   justify-content: space-between;
   align-items: center;
   background-color: #d3d3d333;
-  border: 2px solid var(--iron);
+  border: 2px solid var(--primerr);
   border: 2px solid transparent;
 }
 
@@ -339,7 +331,7 @@ header {
 }
 
 .program-section h3 {
-  color: var(--red-orange);
+  color: var(--secondary);
   font-size: 16px;
   font-weight: bolder;
 }
@@ -383,7 +375,7 @@ header {
 }
 
 .speakers .title {
-  color: var(--shark);
+  color: var(--masks);
   font-size: 24px;
 }
 
@@ -427,63 +419,49 @@ header {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  color: var(--shark);
+  color: var(--masks);
 }
 
 .dynamic-speakers .name {
-  color: var(--shark);
+  color: var(--masks);
 }
 
 .dynamic-speakers .hall-of-fame {
-  color: var(--shark);
+  color: var(--masks);
 }
 
 .dynamic-speakers li hr {
-  border-color: var(--red-orange);
+  border-color: var(--secondary);
 }
 
 .dynamic-speakers a {
-  color: var(--shark);
+  color: var(--masks);
 }
 
 /*  ############################ speakers ############################ */
 .speaker1 .profilepicture {
-  background-image:
-    url("images/comittee1.jpg"),
-    url("./images/chessboard.svg");
+  background-image: url("images/comittee1.jpg"), url("./images/chessboard.svg");
 }
 
 .speaker2 .profilepicture {
-  background-image:
-    url("images/comittee2.jpg"),
-    url("./images/chessboard.svg");
+  background-image: url("images/comittee2.jpg"), url("./images/chessboard.svg");
 }
 
 .speaker3 .profilepicture {
-  background-image:
-    url("images/comittee3.jpg"),
-    url("./images/chessboard.svg");
+  background-image: url("images/comittee3.jpg"), url("./images/chessboard.svg");
 }
 
 .speaker4 .profilepicture {
-  background-image:
-    url("images/director.png"),
-    url("./images/chessboard.svg");
+  background-image: url("images/director.png"), url("./images/chessboard.svg");
 }
 
 .speaker5 .profilepicture {
-  background-image:
-    url("images/comittee5.jpg"),
-    url("./images/chessboard.svg");
+  background-image: url("images/comittee5.jpg"), url("./images/chessboard.svg");
 }
 
 .speaker6 .profilepicture {
-  background-image:
-    url("images/commitee7.jpeg"),
-    url("./images/chessboard.svg");
+  background-image: url("images/commitee7.jpeg"), url("./images/chessboard.svg");
 }
-
-
 
 /* ############################ partners section ############################ */
 
@@ -493,7 +471,7 @@ header {
   align-items: center;
   justify-content: space-around;
   gap: 24px;
-  background-color: var(--shark);
+  background-color: var(--masks);
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -511,7 +489,7 @@ header {
 }
 
 .partners .title {
-  color: var(--iron);
+  color: var(--primerr);
   font-size: 24px;
 }
 
@@ -522,7 +500,7 @@ header {
   align-items: center;
   justify-content: center;
   gap: 24px;
-  color: var(--iron);
+  color: var(--primerr);
 }
 
 .partners li {
@@ -610,7 +588,7 @@ header {
   height: 32px;
   width: 32px;
   border-radius: 50%;
-  background-color: var(--shark);
+  background-color: var(--masks);
   background-image: url("./images/cancel-icon.svg");
   background-position: center;
 }
@@ -647,7 +625,7 @@ header {
 .mobile-list a {
   display: block;
   padding: 12px;
-  color: var(--shark);
+  color: var(--masks);
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -663,12 +641,12 @@ header {
 }
 
 .cancel:hover {
-  background-color: var(--red-orange);
+  background-color: var(--secondary);
 }
 
 .cancel:active {
-  border: 0.5px solid var(--iron);
-  background-color: var(--red-orange);
+  border: 0.5px solid var(--primerr);
+  background-color: var(--secondary);
   cursor: pointer;
 }
 
@@ -683,19 +661,19 @@ header {
 
 .program-section li:active {
   transform: scale(1);
-  border: 2px solid var(--iron);
+  border: 2px solid var(--primerr);
 }
 
 .mobile-list li:hover {
-  background-color: var(--iron);
+  background-color: var(--primerr);
   transition: background-color 0.2s;
   transition-timing-function: ease-out;
   cursor: pointer;
 }
 
 .mobile-list li:active {
-  background-color: var(--iron);
-  border: 2px solid var(--red-orange);
+  background-color: var(--primerr);
+  border: 2px solid var(--secondary);
   cursor: pointer;
 }
 
@@ -728,14 +706,8 @@ header {
   }
 
   .head > * {
-    margin-left:
-      calc(
-        0.2 * (100vw - var(--media-breakpoint)) + 24px
-      );
-    margin-right:
-      calc(
-        0.2 * (100vw - var(--media-breakpoint)) + 24px
-      );
+    margin-left: calc(0.2 * (100vw - var(--media-breakpoint)) + 24px);
+    margin-right: calc(0.2 * (100vw - var(--media-breakpoint)) + 24px);
     max-width: 80%;
   }
 
@@ -753,14 +725,8 @@ header {
 
   /* ############################ program section ############################ */
   .program-section > * {
-    margin-left:
-      calc(
-        0.15 * (100vw - var(--media-breakpoint)) + 24px
-      );
-    margin-right:
-      calc(
-        0.15 * (100vw - var(--media-breakpoint)) + 24px
-      );
+    margin-left: calc(0.15 * (100vw - var(--media-breakpoint)) + 24px);
+    margin-right: calc(0.15 * (100vw - var(--media-breakpoint)) + 24px);
     max-width: 80%;
   }
 
@@ -782,7 +748,7 @@ header {
     background-color: rgb(211 211 211 / 20%);
     max-width: 190px;
     height: 150px;
-    border: 3px solid var(--iron);
+    border: 3px solid var(--primerr);
     border: 3px solid transparent;
   }
 
@@ -806,18 +772,12 @@ header {
 
   .program-section li:active {
     transform: scale(1);
-    border: 3px solid var(--iron);
+    border: 3px solid var(--primerr);
   }
 
   .speakers > * {
-    margin-left:
-      calc(
-        0.2 * (100vw - var(--media-breakpoint)) + 12px
-      );
-    margin-right:
-      calc(
-        0.2 * (100vw - var(--media-breakpoint)) + 12px
-      );
+    margin-left: calc(0.2 * (100vw - var(--media-breakpoint)) + 12px);
+    margin-right: calc(0.2 * (100vw - var(--media-breakpoint)) + 12px);
   }
 
   .dynamic-speakers {
@@ -836,9 +796,7 @@ header {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    padding:
-      48px
-      calc(0.2 * (100vw - var(--media-breakpoint)) + 12px);
+    padding: 48px calc(0.2 * (100vw - var(--media-breakpoint)) + 12px);
 
     .license .logo-text {
       text-align: left;
@@ -850,32 +808,32 @@ header {
 
   .mainmenunav button:hover {
     color: white;
-    background-color: var(--red-orange);
-    border: 3px solid var(--red-orange);
+    background-color: var(--secondary);
+    border: 3px solid var(--secondary);
   }
 
   .mainmenunav button:active {
     color: white;
-    background-color: var(--red-orange);
-    border: 3px solid var(--shark);
+    background-color: var(--secondary);
+    border: 3px solid var(--masks);
   }
 
   .mobile-list li:hover {
-    background-color: var(--iron);
+    background-color: var(--primerr);
     transition: background-color 0.2s;
     transition-timing-function: ease-out;
     cursor: pointer;
   }
 
   .mobile-list li:active {
-    background-color: var(--iron);
-    border: 2px solid var(--red-orange);
+    background-color: var(--primerr);
+    border: 2px solid var(--secondary);
     cursor: pointer;
   }
 
   /* ############################ speakers  ############################ */
   .dynamic-speakers a:hover {
-    color: var(--red-orange);
+    color: var(--secondary);
   }
 
   a.to-the-top-button.icon-animation {
