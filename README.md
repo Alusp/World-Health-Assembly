@@ -33,14 +33,15 @@ Navigate through the web page to find the information you need. Use the links in
   Project reside in this Repo and is hosted on Github pages. You can clone the repo or download the files manually to your local machine.
   below is the online link for this website:
 
-- GITHUB PAGES: [@WHO-Conference]()
+- GITHUB PAGES: [@WHO-Conference](https://alusp.github.io/World-Health-Assembly/)
 
 ## Authors
 
 👤 **Alusine Jalloh**
 
-- GitHub: [@Alusp]()
-- LinkedIn: [@alusine-jalloh-873951209]()
+- GitHub: [@Alusp](https://github.com/Alusp/World-Health-Assembly)
+- LinkedIn: [@alusine-jalloh-873951209](https://www.linkedin.com/in/alusine-jalloh-873951209
+)
  
 ## 🤝 Contributing
 
