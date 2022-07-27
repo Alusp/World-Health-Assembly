@@ -1,0 +1,848 @@
+:root {
+  --primerr: #d3d3d3;
+  --secondary: #f6362f;
+  --masks: #282931;
+  --media-breakpoint: 768px;
+}
+
+/* ############################ General style ############################ */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: Lato, sans-serif;
+  background-color: #747474;
+}
+
+hr {
+  border: none;
+  width: 24px;
+  padding: 12px;
+  border-top: 2px solid var(--secondary);
+}
+
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+/* ############################ Global  classes ############################ */
+
+.button {
+  background-color: var(--secondary);
+  border: 0.5px solid transparent;
+  color: white;
+  padding: 12px 24px;
+  width: fit-content;
+  font-family: lato, sans-serif;
+  font-weight: 400;
+}
+
+.button:hover {
+  border: 0.5px solid transparent;
+  box-shadow: 0 4px 6px 3px var(--primerr);
+  cursor: pointer;
+}
+
+.button:active {
+  border: 0.5px solid var(--secondary);
+  background: white;
+  color: var(--secondary);
+  cursor: pointer;
+}
+
+/* ############################  Styling For Header  ############################ */
+header {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+
+.mymobilenav {
+  width: calc(100% - 48px);
+  height: 48px;
+  margin: 12px 24px;
+  background-color: white;
+  background-color: transparent;
+}
+
+.mymobilenav .buttonmobilemenu {
+  height: 100%;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--masks);
+}
+
+.fordesktopnav {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+
+.fordesktopnav > * {
+  padding-left: calc(0.2 * (100vw - var(--media-breakpoint)) + 12px);
+  padding-right: calc(0.2 * (100vw - var(--media-breakpoint)) + 12px);
+}
+
+.accounttopbar {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  color: white;
+  background-color: var(--masks);
+}
+
+.accounttopbar a {
+  color: #d3d3d3;
+  font-weight: 500;
+}
+
+.accounttopbar .child3 {
+  padding-left: 12px;
+}
+
+.nav-bar {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: #018dc9;
+  box-shadow: 0 2px 2px 1px rgb(48 62 77 / 54.8%);
+}
+
+.nav-bar .logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: COCOGOOSE, sans-serif;
+  cursor: pointer;
+}
+
+.nav-bar img {
+  height: 48px;
+}
+
+.nav-bar .logo-text {
+  font-size: 16px;
+  min-width: 120px;
+  font-weight: 100;
+  position: relative;
+  top: 6px;
+  color: var(--masks);
+}
+
+.mainmenunav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navmenu {
+  display: flex;
+  flex-direction: row;
+  padding: 12px;
+  justify-self: flex-end;
+}
+
+.navmenu a {
+  color: var(--masks);
+  font-weight: 500;
+  padding: 12px;
+}
+
+.navmenu .current-page {
+  color: var(--secondary);
+}
+
+.mainmenunav button {
+  color: var(--secondary);
+  background-color: white;
+  border: 3px solid var(--secondary);
+  font-family: COCOGOOSE, sans-serif;
+}
+
+/* mobile nav */
+.mymobilenav .buttonmobilemenu:hover {
+  background-color: var(--masks);
+  color: white;
+}
+
+.mymobilenav .buttonmobilemenu:active {
+  border: 0.5px solid var(--primerr);
+  background-color: var(--masks);
+  cursor: pointer;
+}
+
+/* ############################ head section ############################ */
+.head {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 12px;
+  min-height: calc(100vh - 76px);
+  background-color: var(--primerr);
+  background-color: transparent;
+}
+
+.head > * {
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.head .hello {
+  color: var(--secondary);
+  font-size: 24px;
+}
+
+.head .title {
+  font-family: Lato, sans-serif;
+  font-size: 48px;
+  font-weight: 800;
+  background-image: url("./images/tittle-bg.jpg");
+  /* stylelint-disable-next-line property-no-vendor-prefix */
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.head .supporting-text {
+  padding: 12px;
+  color: var(--masks);
+  font-size: 18px;
+  background-color: rgb(255 255 255 / 20%);
+  border: 2px solid var(--primerr);
+}
+
+.head .date {
+  color: var(--masks);
+  font-size: 32px;
+  font-weight: bold;
+  overflow-wrap: break-word;
+}
+
+.head .place {
+  color: var(--masks);
+  font-size: 24px;
+  font-weight: bolder;
+  overflow-wrap: break-word;
+}
+
+/* ############################ program section ############################ */
+.program-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  gap: 16px;
+  min-height: 50vh;
+  background-image: url("./images/program-bg.png");
+  background-color: var(--masks);
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.program-section > * {
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.program-section > .title-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+
+.program-section .title {
+  color: white;
+  font-size: 24px;
+}
+
+.program-section ul {
+  width: calc(100% - 2 * 16px);
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(5, auto);
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.program-section li {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  padding: 12px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #d3d3d333;
+  border: 2px solid var(--primerr);
+  border: 2px solid transparent;
+}
+
+.program-section li > div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 12px;
+}
+
+.program-section i {
+  color: #f6362f;
+}
+
+.program-section h3 {
+  color: var(--secondary);
+  font-size: 16px;
+  font-weight: bolder;
+}
+
+.program-section p {
+  color: white;
+  max-width: 55%;
+}
+
+.program-section .see-more {
+  margin-top: 12px;
+  color: white;
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
+/* ||| speakers section-------------------------------------- */
+
+.speakers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  gap: 16px;
+  min-height: 100vh;
+  background-color: white;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.speakers > * {
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.speakers .title-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+
+.speakers .title {
+  color: var(--masks);
+  font-size: 24px;
+}
+
+.dynamic-speakers {
+  width: calc(100% - 2 * 16px);
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  align-items: center;
+  justify-content: start;
+  row-gap: 96px;
+  column-gap: 48px;
+}
+
+.dynamic-speakers hr {
+  width: 10px;
+  padding: 0 12px;
+}
+
+.dynamic-speakers li {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.dynamic-speakers .profilepicture {
+  width: 180px;
+  height: 130px;
+  min-width: 180px;
+  min-height: 130px;
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: bottom right, top left;
+  background-size: 90% 90%, 40% 40%;
+}
+
+.dynamic-speakers .profile-info {
+  padding-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  color: var(--masks);
+}
+
+.dynamic-speakers .name {
+  color: var(--masks);
+}
+
+.dynamic-speakers .hall-of-fame {
+  color: var(--masks);
+}
+
+.dynamic-speakers li hr {
+  border-color: var(--secondary);
+}
+
+.dynamic-speakers a {
+  color: var(--masks);
+}
+
+/*  ############################ speakers ############################ */
+.speaker1 .profilepicture {
+  background-image: url("images/comittee1.jpg"), url("./images/chessboard.svg");
+}
+
+.speaker2 .profilepicture {
+  background-image: url("images/comittee2.jpg"), url("./images/chessboard.svg");
+}
+
+.speaker3 .profilepicture {
+  background-image: url("images/comittee3.jpg"), url("./images/chessboard.svg");
+}
+
+.speaker4 .profilepicture {
+  background-image: url("images/director.png"), url("./images/chessboard.svg");
+}
+
+.speaker5 .profilepicture {
+  background-image: url("images/comittee5.jpg"), url("./images/chessboard.svg");
+}
+
+.speaker6 .profilepicture {
+  background-image: url("images/commitee7.jpeg"), url("./images/chessboard.svg");
+}
+
+/* ############################ partners section ############################ */
+
+.partners {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  gap: 24px;
+  background-color: var(--masks);
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.partners > * {
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.partners .title-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+
+.partners .title {
+  color: var(--primerr);
+  font-size: 24px;
+}
+
+.partners ul {
+  width: calc(100% - 2 * 16px);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  color: var(--primerr);
+}
+
+.partners li {
+  padding: 12px;
+  font-size: 24px;
+}
+
+/* ############################ license section ############################ */
+
+.license {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 48px 16px;
+  gap: 24px;
+  background-color: #018dc9;
+}
+
+.license .logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: COCOGOOSE, sans-serif;
+}
+
+.license img {
+  height: 48px;
+}
+
+.license .logo-text {
+  font-size: 16px;
+  min-width: 120px;
+  font-weight: 400;
+  position: relative;
+  top: 6px;
+  color: #282931;
+  text-align: center;
+  max-width: 50%;
+}
+
+.license .logo:hover {
+  transform: scale(1.1);
+}
+
+/* ############################ Absolutely positioned elements ############################ */
+.header-background {
+  position: absolute;
+  top: 0;
+  background-image: url("images/bg1.jpg");
+  filter: grayscale(70%) brightness(90%) contrast(50%);
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  width: 100%;
+  z-index: -1;
+}
+
+.mobile-menu {
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  min-height: 100vh;
+  width: 100%;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: -2;
+  background-image: url("./images/mobile-bg.png");
+  background-size: 100% auto;
+  backdrop-filter: blur(4px);
+}
+
+.toolbar {
+  display: flex;
+  width: 100%;
+  justify-content: end;
+}
+
+.cancel {
+  margin: 11px 22px auto auto;
+  padding: 12px;
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  background-color: var(--masks);
+  background-image: url("./images/cancel-icon.svg");
+  background-position: center;
+}
+
+.middle-part {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 64px;
+}
+
+.mobile-list {
+  box-sizing: border-box;
+  list-style: none;
+  margin: 0 12px;
+  background-color: rgb(40 41 49 / 25%);
+  width: calc(100% - 24px);
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobile-list li {
+  width: 100%;
+  border: 2px solid #fff;
+  border: 2px solid transparent;
+  border-radius: 10px;
+}
+
+.mobile-list a {
+  display: block;
+  padding: 12px;
+  color: var(--masks);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.middle-part .campaign-button {
+  align-self: center;
+  width: fit-content;
+}
+
+.mobile-menu .accounttopbar {
+  justify-content: center;
+}
+
+.cancel:hover {
+  background-color: var(--secondary);
+}
+
+.cancel:active {
+  border: 0.5px solid var(--primerr);
+  background-color: var(--secondary);
+  cursor: pointer;
+}
+
+.partners li:hover {
+  transform: scale(1.2);
+}
+
+/*  ############################ program-section ############################ */
+.program-section li:hover {
+  transform: scale(1.02);
+}
+
+.program-section li:active {
+  transform: scale(1);
+  border: 2px solid var(--primerr);
+}
+
+.mobile-list li:hover {
+  background-color: var(--primerr);
+  transition: background-color 0.2s;
+  transition-timing-function: ease-out;
+  cursor: pointer;
+}
+
+.mobile-list li:active {
+  background-color: var(--primerr);
+  border: 2px solid var(--secondary);
+  cursor: pointer;
+}
+
+/* ############################ mobile only ############################ */
+
+@media only screen and (max-width: 768px) {
+  .fordesktopnav {
+    display: none;
+  }
+}
+
+/* ############################ desktop only ############################ */
+
+@media only screen and (min-width: 768px) {
+  .mymobilenav {
+    display: none;
+  }
+
+  .fordesktopnav {
+    display: flex;
+  }
+
+  .mobile-menu {
+    display: none;
+  }
+
+  /* || headline section */
+  .head {
+    min-height: calc(100vh - 121px);
+  }
+
+  .head > * {
+    margin-left: calc(0.2 * (100vw - var(--media-breakpoint)) + 24px);
+    margin-right: calc(0.2 * (100vw - var(--media-breakpoint)) + 24px);
+    max-width: 80%;
+  }
+
+  .head .hello {
+    font-size: 32px;
+  }
+
+  .head .title {
+    font-size: 64px;
+  }
+
+  .head .supporting-text {
+    max-width: var(--media-breakpoint);
+  }
+
+  /* ############################ program section ############################ */
+  .program-section > * {
+    margin-left: calc(0.15 * (100vw - var(--media-breakpoint)) + 24px);
+    margin-right: calc(0.15 * (100vw - var(--media-breakpoint)) + 24px);
+    max-width: 80%;
+  }
+
+  .program-section ul {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-items: center;
+    gap: 8px;
+  }
+
+  .program-section li {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 12px;
+    justify-content: flex-start;
+    align-content: space-between;
+    background-color: rgb(211 211 211 / 20%);
+    max-width: 190px;
+    height: 150px;
+    border: 3px solid var(--primerr);
+    border: 3px solid transparent;
+  }
+
+  .program-section li > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .program-section p {
+    color: white;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .program-section li:hover {
+    transform: scale(1.05);
+  }
+
+  .program-section li:active {
+    transform: scale(1);
+    border: 3px solid var(--primerr);
+  }
+
+  .speakers > * {
+    margin-left: calc(0.2 * (100vw - var(--media-breakpoint)) + 12px);
+    margin-right: calc(0.2 * (100vw - var(--media-breakpoint)) + 12px);
+  }
+
+  .dynamic-speakers {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: auto;
+    align-items: center;
+    justify-items: center;
+    row-gap: 24px;
+    column-gap: 8px;
+  }
+
+  /* ############################ license ############################ */
+  .license {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 48px calc(0.2 * (100vw - var(--media-breakpoint)) + 12px);
+
+    .license .logo-text {
+      text-align: left;
+      max-width: 60%;
+    }
+  }
+
+  /* ############################ animations and effects ############################ */
+
+  .mainmenunav button:hover {
+    color: white;
+    background-color: var(--secondary);
+    border: 3px solid var(--secondary);
+  }
+
+  .mainmenunav button:active {
+    color: white;
+    background-color: var(--secondary);
+    border: 3px solid var(--masks);
+  }
+
+  .mobile-list li:hover {
+    background-color: var(--primerr);
+    transition: background-color 0.2s;
+    transition-timing-function: ease-out;
+    cursor: pointer;
+  }
+
+  .mobile-list li:active {
+    background-color: var(--primerr);
+    border: 2px solid var(--secondary);
+    cursor: pointer;
+  }
+
+  /* ############################ speakers  ############################ */
+  .dynamic-speakers a:hover {
+    color: var(--secondary);
+  }
+
+  a.to-the-top-button.icon-animation {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 5px;
+    z-index: 3;
+    transform: rotate(180deg);
+    box-shadow: -2px -2px 10px 1px lightgray;
+  }
+}
