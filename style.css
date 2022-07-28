@@ -1,7 +1,12 @@
 :root {
   --primerr: #d3d3d3;
-  --secondary: #f6362f;
+  --secondary: rgb(239, 81, 60);
   --masks: #282931;
+  --gray-light: rgb(237, 237, 238);
+  --gray-mid: rgb(87, 87, 87);
+  --gray-dark: rgb(39, 42, 50);
+  --white: rgb(255, 255, 255);
+  --orange: rgb(239, 81, 60);
   --media-breakpoint: 768px;
 }
 
