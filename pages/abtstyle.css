@@ -258,7 +258,6 @@ header {
   inline-size: 90%;
   background-color: #10111295;
   border: 1px solid var(--primerr);
-  
 }
 
 .headline-about .contact p {
@@ -703,7 +702,6 @@ header {
     background-repeat: repeat;
     background-size: cover;
     background-position: center;
-    
   }
 
   .headline-about > * {
