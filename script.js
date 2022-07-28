@@ -1,12 +1,8 @@
 // ############################# Responsive head section backgound ################################
 
 const header = document.querySelector('header');
-const headlineSection = document.querySelector(
-  'section.head',
-);
-const headerHelloBg = document.querySelector(
-  '.header-background',
-);
+const headlineSection = document.querySelector('section.head');
+const headerHelloBg = document.querySelector('.header-background');
 
 const fitTheBgImageToTopSection = () => {
   headerHelloBg.style.height = `${
@@ -20,24 +16,14 @@ const fitTheBgImageToTopSection = () => {
 
 // ################################ Mobile menu ################################
 const MEDIA_BREAKPOINT = 768;
-const mobileMenuButton = document.querySelector(
-  'button.buttonmobilemenu',
-);
-const mobileMenuList = document.querySelectorAll(
-  '.mobile-list > li',
-);
-const mobileMenu = document.querySelector(
-  'div.mobile-menu',
-);
+const mobileMenuButton = document.querySelector('button.buttonmobilemenu');
+const mobileMenuList = document.querySelectorAll('.mobile-list > li');
+const mobileMenu = document.querySelector('div.mobile-menu');
 
-const cancelMobileMenu = document.querySelector(
-  '.mobile-menu .cancel',
-);
+const cancelMobileMenu = document.querySelector('.mobile-menu .cancel');
 
 function showMobileMenu(e) {
-  if (
-    e.currentTarget.classList.contains('buttonmobilemenu')
-  ) {
+  if (e.currentTarget.classList.contains('buttonmobilemenu')) {
     mobileMenu.style.display = 'flex';
     mobileMenu.style['z-index'] = 2;
     document.body.style.overflowY = 'hidden';
@@ -47,9 +33,7 @@ function showMobileMenu(e) {
 function hideMobileMenu(e) {
   if (
     e.currentTarget.classList.contains('cancel')
-    || e.currentTarget.parentNode.classList.contains(
-      'mobile-list',
-    )
+    || e.currentTarget.parentNode.classList.contains('mobile-list')
   ) {
     mobileMenu.style.display = 'none';
     mobileMenu.style['z-index'] = -2;
@@ -85,55 +69,46 @@ const speakersData = [
     name: 'Dr Adriana Amarilla',
     description1: 'Chair of Committee A,  from Paraguay.',
     description2: 'Virtual   World Health Assembly',
-    moreInfoLink:
-      'https://www.who.int/about/governance/world-health-assembly',
+    moreInfoLink: 'https://www.who.int/about/governance/world-health-assembly',
   },
   {
     id: 'speaker2',
     name: 'Mrs Dechen Wangmo',
     description1: 'President of the Assembly.',
     description2: 'Virtual   World Health Assembly',
-    moreInfoLink:
-      'https://www.who.int/about/governance/world-health-assembly',
+    moreInfoLink: 'https://www.who.int/about/governance/world-health-assembly',
   },
   {
     id: 'speaker3',
     name: 'Dr Tedros Adhanom',
     description1: 'WHO Director-General.',
     description2: 'World Health Organization Assembly ',
-    moreInfoLink:
-      'https://www.who.int/about/governance/world-health-assembly',
+    moreInfoLink: 'https://www.who.int/about/governance/world-health-assembly',
   },
   {
     id: 'speaker4',
     name: 'Dr Tedros Adhanom',
     description1: 'WHO Director-General.',
     description2: 'Virtual   World Health Assembly',
-    moreInfoLink:
-      'https://www.who.int/about/governance/world-health-assembly',
+    moreInfoLink: 'https://www.who.int/about/governance/world-health-assembly',
   },
   {
     id: 'speaker5',
     name: 'Michael Jerferson ',
     description1: 'Program Director',
     description2: ' World Health Organization Assembly ',
-    moreInfoLink:
-      'https://www.who.int/about/governance/world-health-assembly',
+    moreInfoLink: 'https://www.who.int/about/governance/world-health-assembly',
   },
   {
     id: 'speaker6',
     name: 'Christos Giakoumopoulos',
     description1: 'Director General',
     description2: 'Virtual   World Health Assembly',
-    moreInfoLink:
-      'https://www.who.int/about/governance/world-health-assembly',
+    moreInfoLink: 'https://www.who.int/about/governance/world-health-assembly',
   },
-
 ];
 
-const dynamicSpeakers = document.querySelector(
-  '.dynamic-speakers',
-);
+const dynamicSpeakers = document.querySelector('.dynamic-speakers');
 
 const loadSpeakers = () => {
   if (dynamicSpeakers !== null) {
