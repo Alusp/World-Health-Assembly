@@ -1,7 +1,7 @@
 :root {
   --primerr: #d3d3d3;
-  --secondary: rgb(239, 81, 60);
-  --masks: #282931;
+  --secondary: #ec5242;
+  --masks: #272a31;
   --gray-light: rgb(237, 237, 238);
   --gray-mid: rgb(87, 87, 87);
   --gray-dark: rgb(39, 42, 50);
@@ -142,6 +142,7 @@ header {
   padding-left: 12px;
 }
 
+/* background-color: #018dc9; */
 .nav-bar {
   position: relative;
   display: flex;
@@ -150,7 +151,7 @@ header {
   align-items: center;
   padding-top: 12px;
   padding-bottom: 12px;
-  background-color: #018dc9;
+  background-color: var(--white);
   box-shadow: 0 2px 2px 1px rgb(48 62 77 / 54.8%);
 }
 
@@ -271,6 +272,12 @@ header {
   overflow-wrap: break-word;
 }
 
+.small-text {
+  background-color: rgb(255 255 255 / 20%);
+  border: 0.5px solid var(--primerr);
+  padding: 5px;
+}
+
 /* ############################ program section ############################ */
 .program-section {
   display: flex;
@@ -332,7 +339,7 @@ header {
 }
 
 .program-section i {
-  color: #f6362f;
+  color: var(--secondary);
 }
 
 .program-section h3 {
@@ -518,12 +525,11 @@ header {
 .license {
   position: relative;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 48px 16px;
   gap: 24px;
-  background-color: #018dc9;
+  background-color: var(--white);
 }
 
 .license .logo {
@@ -556,8 +562,8 @@ header {
 .header-background {
   position: absolute;
   top: 0;
-  background-image: url("images/bg1.jpg");
-  filter: grayscale(70%) brightness(90%) contrast(50%);
+  background-image: url("images/newbg1.jpg");
+  filter: grayscale(100%) brightness(100%) contrast(15%);
   background-repeat: repeat;
   background-size: cover;
   background-position: center;
@@ -737,7 +743,6 @@ header {
 
   .program-section ul {
     display: flex;
-    flex-flow: row wrap;
     align-items: center;
     justify-items: center;
     gap: 8px;
