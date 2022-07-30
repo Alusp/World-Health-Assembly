@@ -525,13 +525,11 @@ header {
 .license {
   position: relative;
   display: flex;
-
-  /* flex-direction: column; */
   justify-content: center;
   align-items: center;
   padding: 48px 16px;
   gap: 24px;
-  background-color: #018dc9;
+  background-color: var(--white);
 }
 
 .license .logo {

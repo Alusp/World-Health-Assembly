@@ -58,6 +58,15 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
+## Acknowledgements
+
+- Original design idea by [Cindy Shin in Behance](https://www.behance.net/adagio07)
+
+- Original logo [who.int](https://logos-download.com/wp-content/uploads/2016/12/World_Health_Organization_logo_logotype.png)
+
+- Headline section background photo by [world-health-day](https://nationaltoday.com/world-health-day/)
+
+
 - Hat tip to anyone whose code was used
 - Inspiration
 - etc
