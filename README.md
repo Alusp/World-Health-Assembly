@@ -2,7 +2,7 @@
 
 # Project Name
 
-The World Health Assembly is the decision-making body of WHO. It is attended by delegations from all WHO Member States and focuses on a specific health agenda prepared by the Executive Board. The main functions of the World Health Assembly are to determine the policies of the Organization, appoint the Director-General, supervise financial policies, and review and approve the proposed programme budget. The Health Assembly is held annually in Geneva, Switzerland.
+>The World Health Assembly is the decision-making body of WHO. It is attended by delegations from all WHO Member States and focuses on a specific health agenda prepared by the Executive Board. The main functions of the World Health Assembly are to determine the policies of the Organization, appoint the Director-General, supervise financial policies, and review and approve the proposed programme budget. The Health Assembly is held annually in Geneva, Switzerland.
 
 
 ![screenshot](images/Screenshot2.png)
@@ -36,7 +36,7 @@ Navigate through the web page to find the information you need. Use the links in
   Project reside in this Repo and is hosted on Github pages. You can clone the repo or download the files manually to your local machine.
   below is the online link for this website:
 
-- GITHUB PAGES: [@WHO-Conference](https://alusp.github.io/World-Health-Assembly/)
+[Conference Live Demo](https://alusp.github.io/World-Health-Assembly/)
 
 ## Authors
 
