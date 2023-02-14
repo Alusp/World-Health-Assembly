@@ -7,6 +7,7 @@
   --gray-dark: rgb(39, 42, 50);
   --white: rgb(255, 255, 255);
   --orange: rgb(239, 81, 60);
+  --button-border: 0.5px solid transparent;
   --media-breakpoint: 768px;
 }
 
@@ -67,7 +68,7 @@ button {
 
 .button {
   background-color: var(--secondary);
-  border: 0.5px solid transparent;
+  border: var(--button-border);
   color: white;
   padding: 12px 24px;
   width: fit-content;
@@ -76,7 +77,7 @@ button {
 }
 
 .button:hover {
-  border: 0.5px solid transparent;
+  border: var(--button-border);
   box-shadow: 0 4px 6px 3px var(--primerr);
   cursor: pointer;
 }
@@ -245,9 +246,8 @@ header {
   font-size: 48px;
   font-weight: 800;
   background-image: url("./images/tittle-bg.jpg");
-  /* stylelint-disable-next-line property-no-vendor-prefix */
-  -webkit-background-clip: text;
   color: transparent;
+  -webkit-background-clip: text;
 }
 
 .head .supporting-text {
