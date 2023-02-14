@@ -807,11 +807,9 @@ header {
     justify-content: space-around;
     align-items: center;
     padding: 48px calc(0.2 * (100vw - var(--media-breakpoint)) + 12px);
-    text-align: left;
-    max-width: 60%;
   }
 
-  .logo-text {
+  .license .logo-text {
     text-align: left;
     max-width: 60%;
   }
