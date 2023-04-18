@@ -687,7 +687,7 @@ header {
   cursor: pointer;
 }
 
-/* ############################ mobile only ############################ */
+/* ############################ mobile-only ############################ */
 
 @media only screen and (max-width: 768px) {
   .fordesktopnav {
