@@ -693,6 +693,17 @@ header {
   .fordesktopnav {
     display: none;
   }
+
+  .dynamic-speakers {
+    width: calc(100% - 2 * 16px);
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    align-items: center;
+    justify-content: start;
+    row-gap: 40px;
+    column-gap: 48px;
+  }
 }
 
 /* ############################ desktop only ############################ */
