@@ -704,6 +704,14 @@ header {
     row-gap: 40px;
     column-gap: 48px;
   }
+
+  .speakers .title-group {
+    padding-top: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+  }
 }
 
 /* ############################ desktop only ############################ */
