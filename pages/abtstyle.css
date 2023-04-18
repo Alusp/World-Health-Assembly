@@ -4,6 +4,7 @@
   --primerr: #d3d3d3;
   --secondary: #ec5242;
   --masks: #272a31;
+  --light-blue: #2480b2;
   --gray-light: rgb(237, 237, 238);
   --gray-mid: rgb(87, 87, 87);
   --gray-dark: rgb(39, 42, 50);
@@ -215,7 +216,7 @@ header {
   gap: 24px;
   min-height: 100vh;
   background-image: url("../images/newbg3.jpg");
-  filter: grayscale(%) brightness(80%) contrast(55%);
+  filter: grayscale(0%) brightness(80%) contrast(55%);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -354,7 +355,7 @@ header {
   background-color: var(--white);
   padding-top: 50px;
   padding-bottom: 50px;
-  box-shadow: 0 0 1px 0 lightslategray;
+  box-shadow: 0 0 2px 0 rgba(39, 42, 49, 0.623);
 }
 
 .past-events-section > * {
@@ -472,7 +473,7 @@ header {
   align-items: center;
   padding: 48px 16px;
   gap: 24px;
-  background-color: var(--white);
+  background-color: var(--masks);
 }
 
 .license .logo {
@@ -492,9 +493,24 @@ header {
   font-weight: 400;
   position: relative;
   top: 6px;
-  color: #282931;
+  color: var(--white);
   text-align: center;
   max-width: 50%;
+}
+
+.mobile-list a {
+  display: block;
+  padding: 12px;
+  color: var(--masks);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.license .logo-text a {
+  color: var(--light-blue);
+  text-decoration: none;
+  font-weight: 600;
 }
 
 .license .logo:hover {
@@ -573,15 +589,6 @@ header {
   border: 2px solid #fff;
   border: 2px solid transparent;
   border-radius: 10px;
-}
-
-.mobile-list a {
-  display: block;
-  padding: 12px;
-  color: var(--masks);
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 700;
 }
 
 .middle-part .campaign-button {
