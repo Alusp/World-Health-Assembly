@@ -247,6 +247,8 @@ header {
   font-weight: 800;
   background-image: url("./images/tittle-bg.jpg");
   color: transparent;
+  /* stylelint-disable-next-line csstree/validator */
+  background-clip: text;
   -webkit-background-clip: text;
 }
 
