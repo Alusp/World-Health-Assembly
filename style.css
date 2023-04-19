@@ -657,10 +657,9 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  gap: 16px;
-  min-height: 100vh;
+  gap: 40px;
   background-color: white;
-  padding-bottom: 50px;
+  padding: 70px 0;
 }
 
 .speakers > * {
@@ -1188,7 +1187,7 @@ header {
     display: flex;
     align-items: center;
     justify-items: center;
-    gap: 8px;
+    gap: 12px;
   }
 
   .site-map div {
@@ -1203,8 +1202,6 @@ header {
     justify-content: flex-start;
     align-content: space-between;
     background-color: rgb(211 211 211 / 20%);
-    max-width: 190px;
-    height: 150px;
     border: 3px solid var(--primerr);
     border: 3px solid transparent;
   }
@@ -1394,4 +1391,10 @@ header {
   color: var(--white);
   background-color: var(--secondary);
   border: 3px solid var(--masks);
+}
+
+@media (min-width: 1366px) {
+  .dynamic-speakers {
+    padding: 0 10rem;
+  }
 }
