@@ -1351,7 +1351,7 @@ header {
     max-width: var(--media-breakpoint);
   }
 
-  .about-logo-section>* {
+  .about-logo-section > * {
     margin-left: calc(0.15 * (100vw - var(--media-breakpoint)) + 24px);
     margin-right: calc(0.15 * (100vw - var(--media-breakpoint)) + 24px);
     max-width: 80%;
