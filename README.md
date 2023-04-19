@@ -91,7 +91,7 @@ The World Health Assembly is the decision-making body of WHO. It is attended by 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 
-- [Conference Live Demo](https://alusp.github.io/World-Health-Assembly/)
+- [Conference Live Demo](https://world-health-organization.netlify.app/)
 
 ![screenshot](images/Screenshot2.png)
 
