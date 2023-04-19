@@ -99,20 +99,6 @@ header {
   background-color: transparent;
 }
 
-.mobile-nav {
-  width: calc(100% - 48px);
-  padding: 12px 24px;
-  background-color: transparent;
-}
-
-.mobile-nav button {
-  padding: 8px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  color: var(--masks);
-}
-
 .mymobilenav .buttonmobilemenu {
   height: 100%;
   padding: 8px;
@@ -128,18 +114,7 @@ header {
   background-color: var(--white);
 }
 
-.fordesktopnav {
-  display: flex;
-  flex-direction: column;
-  background-color: white;
-}
-
 .desktop-nav > * {
-  padding-left: calc(0.2 * (100vw - var(--media-breakpoint)) + 12px);
-  padding-right: calc(0.2 * (100vw - var(--media-breakpoint)) + 12px);
-}
-
-.fordesktopnav > * {
   padding-left: calc(0.2 * (100vw - var(--media-breakpoint)) + 12px);
   padding-right: calc(0.2 * (100vw - var(--media-breakpoint)) + 12px);
 }
@@ -275,12 +250,6 @@ header {
   background-color: white;
   border: 3px solid var(--secondary);
   font-family: COCOGOOSE, sans-serif;
-}
-
-/* mobile nav */
-.mobile-nav .buttonmobilemenu:hover {
-  background-color: var(--masks);
-  color: var(--white);
 }
 
 .mymobilenav .buttonmobilemenu:hover {
@@ -1098,10 +1067,6 @@ header {
 }
 
 @media only screen and (max-width: 768px) {
-  .fordesktopnav {
-    display: none;
-  }
-
   .desktop-nav {
     display: none;
   }
@@ -1135,14 +1100,6 @@ header {
 @media only screen and (min-width: 768px) {
   .mymobilenav {
     display: none;
-  }
-
-  .mobile-nav {
-    display: none;
-  }
-
-  .fordesktopnav {
-    display: flex;
   }
 
   .desktop-nav {
