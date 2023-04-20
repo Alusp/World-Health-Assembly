@@ -119,16 +119,6 @@ header {
   padding-right: calc(0.2 * (100vw - var(--media-breakpoint)) + 12px);
 }
 
-.accounttopbar {
-  display: flex;
-  justify-content: flex-end;
-  gap: 12px;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  color: white;
-  background-color: var(--masks);
-}
-
 .account-bar {
   display: flex;
   justify-content: flex-end;
@@ -144,20 +134,10 @@ header {
   font-weight: 500;
 }
 
-.accounttopbar a {
-  color: #d3d3d3;
-  font-weight: 500;
-}
-
-.accounttopbar .child3 {
-  padding-left: 12px;
-}
-
 .account-bar .third-child {
   padding-left: 12px;
 }
 
-/* background-color: #018dc9; */
 .nav-bar {
   position: relative;
   display: flex;
@@ -957,10 +937,6 @@ header {
 .middle-part .campaign-button {
   align-self: center;
   width: fit-content;
-}
-
-.mobile-menu .accounttopbar {
-  justify-content: center;
 }
 
 .mobile-menu .account-bar {
