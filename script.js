@@ -5,9 +5,7 @@ const headlineSection = document.querySelector('section.head');
 const headerHelloBg = document.querySelector('.header-background');
 
 const fitTheBgImageToTopSection = () => {
-  headerHelloBg.style.height = `${
-    header.offsetHeight + headlineSection.offsetHeight
-  }px`;
+  headerHelloBg.style.height = `${header.offsetHeight + headlineSection.offsetHeight}px`;
 };
 
 ['DOMContentLoaded', 'resize'].forEach((e) => {

@@ -172,12 +172,6 @@ header {
   color: var(--masks);
 }
 
-.mainmenunav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
 .page-navigation {
   display: flex;
   align-items: center;
@@ -221,13 +215,6 @@ header {
 .page-navigation button {
   color: var(--secondary);
   background-color: var(--white);
-  border: 3px solid var(--secondary);
-  font-family: COCOGOOSE, sans-serif;
-}
-
-.mainmenunav button {
-  color: var(--secondary);
-  background-color: white;
   border: 3px solid var(--secondary);
   font-family: COCOGOOSE, sans-serif;
 }
@@ -1029,17 +1016,6 @@ header {
     border-top: 2px solid var(--masks);
     font-size: 10px;
   }
-
-  .about-license .logo-text {
-    font-size: 16px;
-    min-width: 120px;
-    font-weight: 400;
-    position: relative;
-    top: 6px;
-    color: var(--white);
-    text-align: left;
-    max-width: 50%;
-  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -1068,6 +1044,17 @@ header {
     flex-direction: column;
     gap: 12px;
     align-items: center;
+  }
+
+  .about-license .logo-text {
+    font-size: 16px;
+    min-width: 120px;
+    font-weight: 400;
+    position: relative;
+    top: 6px;
+    color: var(--white);
+    text-align: left;
+    max-width: 50%;
   }
 }
 
@@ -1185,18 +1172,6 @@ header {
   }
 
   /* ############################ animations and effects ############################ */
-
-  .mainmenunav button:hover {
-    color: white;
-    background-color: var(--secondary);
-    border: 3px solid var(--secondary);
-  }
-
-  .mainmenunav button:active {
-    color: white;
-    background-color: var(--secondary);
-    border: 3px solid var(--masks);
-  }
 
   .mobile-list li:hover {
     background-color: var(--primerr);
