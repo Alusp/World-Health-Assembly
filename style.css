@@ -1016,6 +1016,17 @@ header {
     border-top: 2px solid var(--masks);
     font-size: 10px;
   }
+
+  .about-license .logo-text {
+    font-size: 16px;
+    min-width: 120px;
+    font-weight: 400;
+    position: relative;
+    top: 6px;
+    color: var(--white);
+    text-align: left;
+    max-width: 50%;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -1273,17 +1284,6 @@ header {
     justify-content: space-around;
     align-items: center;
     padding: 48px calc(0.2 * (100vw - var(--media-breakpoint)) + 12px);
-  }
-
-  .about-license .logo-text {
-    font-size: 16px;
-    min-width: 120px;
-    font-weight: 400;
-    position: relative;
-    top: 6px;
-    color: var(--white);
-    text-align: left;
-    max-width: 50%;
   }
 }
 
