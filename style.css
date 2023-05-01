@@ -262,7 +262,7 @@ header {
   color: var(--masks);
   font-size: 18px;
   background-color: rgb(255 255 255 / 20%);
-  border: 2px solid var(--primerr);
+  border: 1px solid var(--primerr);
 }
 
 .head .date {
@@ -281,7 +281,6 @@ header {
 
 .small-text {
   background-color: rgb(255 255 255 / 20%);
-  border: 0.5px solid var(--primerr);
   padding: 5px;
 }
 
