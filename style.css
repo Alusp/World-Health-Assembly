@@ -13,6 +13,10 @@
   --most-col: #272a31, #ec5242, #d3d3d3;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* ############################ General style ############################ */
 *,
 *::after,
